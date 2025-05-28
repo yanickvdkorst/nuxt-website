@@ -1,21 +1,35 @@
 <template>
-  <div class="max-w-3xl mx-auto py-8">
+  <div class="bg-gradient-to-br from-indigo-700 via-purple-800 to-pink-700 min-h-screen py-8 px-16 text-white">
     <Head>
       <title>Projecten</title>
       <meta name="description" content="Overzicht van alle projecten" />
     </Head>
-    <h1 class="text-3xl font-bold mb-6 text-indigo-700">Projecten</h1>
-    <ul class="space-y-4">
+
+    <h1 class="text-4xl font-extrabold text-center mb-32 text-white drop-shadow-lg tracking-tight">
+      Mijn projecten
+    </h1>
+    <ul class="grid grid-cols-3 sm:grid-cols-1 lg:grid-cols-3 gap-6 animate-fade-in-up">
       <li
         v-for="project in projects"
         :key="project.id"
-        class="bg-white rounded-lg shadow hover:shadow-lg transition p-4"
+        class="group bg-white/90 rounded-xl shadow-xl hover:shadow-indigo-400 transition-all duration-300 transform hover:-translate-y-1 p-4 border border-white/30 relative overflow-hidden"
       >
+        <span class="absolute top-3 right-3 bg-indigo-600 text-[10px] font-bold px-2 py-0.5 rounded-full shadow text-white uppercase tracking-widest  transition">
+          Project
+        </span>
         <NuxtLink
           :to="`/projecten/${project.slug || project.id}`"
-          class="text-xl text-indigo-600 hover:underline font-semibold"
+          class="block focus:outline-none"
         >
-          {{ project.title || project.id }}
+          <h2 class="text-lg font-bold text-indigo-800 mb-2 group-hover:text-pink-700 transition">
+            {{ project.title || project.id }}
+          </h2>
+          <p class="text-gray-700 text-sm mb-4 min-h-[32px]">
+            {{ project.description || 'Geen beschrijving beschikbaar' }}
+          </p>
+          <span class="inline-block mt-2 px-4 py-1.5 bg-indigo-600 text-white rounded-full font-semibold shadow group-hover:bg-pink-600">
+            Bekijk project &rarr;
+          </span>
         </NuxtLink>
       </li>
     </ul>
@@ -28,7 +42,6 @@ import { collection, getDocs } from "firebase/firestore";
 const { $db } = useNuxtApp();
 
 function serialize(obj: any) {
-  // Zet Firestore Timestamps om naar ISO strings
   if (obj === null || obj === undefined) return obj;
   if (typeof obj !== "object") return obj;
   if (obj.toDate) return obj.toDate().toISOString();

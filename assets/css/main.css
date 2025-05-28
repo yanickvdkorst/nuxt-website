@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* Eigen CSS hier als je wilt */
+header {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
