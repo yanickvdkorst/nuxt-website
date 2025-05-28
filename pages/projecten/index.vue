@@ -5,7 +5,7 @@
       <meta name="description" content="Overzicht van alle projecten" />
     </Head>
 
-    <h1 class="text-4xl font-extrabold text-center mb-32 text-white drop-shadow-lg tracking-tight">
+    <h1 class="text-4xl font-extrabold text-center mb-32 mt-16 text-white drop-shadow-lg tracking-tight">
       Mijn projecten
     </h1>
     <ul class="grid grid-cols-3 sm:grid-cols-1 lg:grid-cols-3 gap-6 animate-fade-in-up">
