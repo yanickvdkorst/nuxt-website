@@ -1,9 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "tailwindcss";
 
 
 html, body{cursor: none;}
+
+
 
 /* Eigen CSS hier als je wilt */
 header {
@@ -17,6 +20,16 @@ a, button:hover {
     cursor: none !important;
 }
 
+@media screen and (max-width: 768px) {
+  html, body {
+    cursor: auto;
+  }
+  
+  a, button:hover {
+    cursor: pointer !important;
+}
+}
+
 .custom-cursor {
   position: fixed;
   pointer-events: none;
@@ -28,4 +41,9 @@ a, button:hover {
   transform: translate(-50%, -50%);
   z-index: 9999;
   transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-cursor { display: none; }
+  
 }

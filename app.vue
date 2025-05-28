@@ -1,21 +1,12 @@
 <template>
-  <header class="py-8 px-16 flex items-center justify-between">
-   <NuxtLink to="/" class="group text-2xl font-bold text-white hover:text-white transition-colors scale-115">
-      <img src="/assets/images/golfcar.svg" alt="Golfcar Logo" class="w-12 h-12 inline-block mr-2 transition-transform duration-300 group-hover:scale-115">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  </head>
+  <header class="">
+    <NuxtLink to="/" class="fixed left-6 top-6 hover:text-white transition-colors scale-115 z-50 group">
+      <img src="/assets/images/golfcar.svg" alt="Golfcar Logo" class="w-8 h-8 inline-block mr-2 transition-transform duration-300 group-hover:scale-115">
     </NuxtLink>
-    <!-- <nav>
-      <ul class="flex space-x-6">
-        <li>
-          <NuxtLink
-            to="/projecten"
-            class="text-lg text-white hover:text-white font-medium transition-colors"
-            active-class="underline text-white"
-          >
-            Projecten
-          </NuxtLink>
-        </li>
-      </ul>
-    </nav> -->
      <FullScreenNav />
   </header>
   <NuxtPage />

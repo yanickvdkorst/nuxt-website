@@ -1,9 +1,9 @@
 <template>
   <div class="min-h-screen flex items-center flex-col justify-center bg-gradient-to-br from-indigo-700 via-purple-800 to-pink-700 py-12 px-4">
-    <div class="text-center text-white animate-fade-in-up delay-800 flex items-center gap-x-32">
-      <div class="left">
+    <div class="text-center text-white animate-fade-in-up delay-800 flex items-center flex-col-reverse lg:flex-row gap-x-32">
+      <div class="left mt-5 lg:mt-0">
         <h1 class="text-5xl font-bold">Neem contact op</h1>
-        <div class="mt-8 flex gap-4 justify-center animate-fade-in delay-300">
+        <div class="mt-4 lg:mt-8 flex gap-4 justify-center animate-fade-in delay-300">
           <a
             class="px-6 py-3 rounded-full border border-white bg-white text-indigo-600 font-semibold shadow hover:bg-transparent hover:text-white hover:border border-white transition"
             href="mailto:yanick.van.der.korst@kpnmail.nl"

@@ -1,35 +1,35 @@
 const client_manifest = {
-  "_B-9C7KPD.js": {
+  "_BKk8nbAZ.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "B-9C7KPD.js",
+    "file": "BKk8nbAZ.js",
     "name": "v3",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_CAVcmvMx.js": {
+  "_CUprcf4Z.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CAVcmvMx.js",
-    "name": "components",
+    "file": "CUprcf4Z.js",
+    "name": "asyncData",
     "imports": [
-      "_B-9C7KPD.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_DEIxYwQI.js": {
+  "_DKfU7867.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DEIxYwQI.js",
-    "name": "asyncData",
+    "file": "DKfU7867.js",
+    "name": "components",
     "imports": [
+      "_BKk8nbAZ.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
@@ -45,13 +45,13 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BKnUnuS5.js",
+    "file": "DO-Z4EbV.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_B-9C7KPD.js"
+      "_BKk8nbAZ.js"
     ],
     "css": []
   },
@@ -66,13 +66,13 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CjKXdK_0.js",
+    "file": "D6YWgrt_.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_B-9C7KPD.js"
+      "_BKk8nbAZ.js"
     ],
     "css": []
   },
@@ -87,7 +87,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "OBv7wEJf.js",
+    "file": "B-TTuTcG.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -96,12 +96,12 @@ const client_manifest = {
       "node_modules/nuxt/dist/app/components/error-500.vue"
     ],
     "css": [
-      "entry.2Cp5eLl7.css"
+      "entry.CeytQYbJ.css"
     ],
     "_globalCSS": true
   },
-  "entry.2Cp5eLl7.css": {
-    "file": "entry.2Cp5eLl7.css",
+  "entry.CeytQYbJ.css": {
+    "file": "entry.CeytQYbJ.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -111,7 +111,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DHZPXCds.js",
+    "file": "xxtxAKLg.js",
     "name": "contact",
     "src": "pages/contact.vue",
     "isDynamicEntry": true,
@@ -133,15 +133,15 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CbIK8b8e.js",
+    "file": "sVA2RMRc.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CAVcmvMx.js",
+      "_DKfU7867.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_DEIxYwQI.js",
-      "_B-9C7KPD.js"
+      "_CUprcf4Z.js",
+      "_BKk8nbAZ.js"
     ],
     "css": []
   },
@@ -156,13 +156,13 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "C4S8RIOD.js",
+    "file": "BsOrd0BU.js",
     "name": "_slug_",
     "src": "pages/projecten/[slug].vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_DEIxYwQI.js"
+      "_CUprcf4Z.js"
     ],
     "css": []
   },
@@ -177,15 +177,15 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "D_JylYG0.js",
+    "file": "Kzy7hqkV.js",
     "name": "index",
     "src": "pages/projecten/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CAVcmvMx.js",
+      "_DKfU7867.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_DEIxYwQI.js",
-      "_B-9C7KPD.js"
+      "_CUprcf4Z.js",
+      "_BKk8nbAZ.js"
     ]
   }
 };

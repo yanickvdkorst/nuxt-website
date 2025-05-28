@@ -20,7 +20,8 @@
         <p class="text-xl md:text-2xl max-w-2xl mx-auto animate-fade-in-up delay-200">
           {{ hero.description }}
         </p>
-        <div class="mt-8 flex gap-4 justify-center animate-fade-in-up delay-300">
+       <div class="mt-8 flex flex-col md:flex-row gap-4 justify-center animate-fade-in-up delay-300">
+
           <NuxtLink
             to="/projecten"
             class="px-6 py-3 rounded-full border border-white bg-white text-indigo-600 font-semibold shadow hover:bg-transparent hover:text-white hover:border border-white transition"          >
