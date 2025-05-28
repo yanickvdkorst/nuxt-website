@@ -1,8 +1,8 @@
 <template>
   <header class="py-8 px-16 flex items-center justify-between">
-   <!-- <NuxtLink to="/" class="group text-2xl font-bold text-white hover:text-white transition-colors scale-115">
+   <NuxtLink to="/" class="group text-2xl font-bold text-white hover:text-white transition-colors scale-115">
       <img src="/assets/images/golfcar.svg" alt="Golfcar Logo" class="w-12 h-12 inline-block mr-2 transition-transform duration-300 group-hover:scale-115">
-    </NuxtLink> -->
+    </NuxtLink>
     <!-- <nav>
       <ul class="flex space-x-6">
         <li>
