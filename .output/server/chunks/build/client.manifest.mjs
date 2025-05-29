@@ -1,35 +1,35 @@
 const client_manifest = {
-  "_BKk8nbAZ.js": {
+  "_D7jKqJbf.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BKk8nbAZ.js",
+    "file": "D7jKqJbf.js",
+    "name": "components",
+    "imports": [
+      "_D_5JB8dp.js",
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_D_5JB8dp.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "D_5JB8dp.js",
     "name": "v3",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_CUprcf4Z.js": {
+  "_wDzCx9HW.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CUprcf4Z.js",
+    "file": "wDzCx9HW.js",
     "name": "asyncData",
     "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
-    ]
-  },
-  "_DKfU7867.js": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "DKfU7867.js",
-    "name": "components",
-    "imports": [
-      "_BKk8nbAZ.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
@@ -45,13 +45,13 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DO-Z4EbV.js",
+    "file": "B7SmA-9G.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_BKk8nbAZ.js"
+      "_D_5JB8dp.js"
     ],
     "css": []
   },
@@ -66,13 +66,13 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "D6YWgrt_.js",
+    "file": "BhmstATC.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_BKk8nbAZ.js"
+      "_D_5JB8dp.js"
     ],
     "css": []
   },
@@ -87,7 +87,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "B-TTuTcG.js",
+    "file": "sBCwtoQm.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -111,7 +111,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "xxtxAKLg.js",
+    "file": "DhBNEA9y.js",
     "name": "contact",
     "src": "pages/contact.vue",
     "isDynamicEntry": true,
@@ -133,15 +133,15 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "sVA2RMRc.js",
+    "file": "BylyiUvG.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_DKfU7867.js",
+      "_D7jKqJbf.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_CUprcf4Z.js",
-      "_BKk8nbAZ.js"
+      "_wDzCx9HW.js",
+      "_D_5JB8dp.js"
     ],
     "css": []
   },
@@ -156,18 +156,18 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BsOrd0BU.js",
+    "file": "8J1HBrrK.js",
     "name": "_slug_",
     "src": "pages/projecten/[slug].vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_CUprcf4Z.js"
+      "_wDzCx9HW.js"
     ],
     "css": []
   },
-  "_slug_.FkTLJjA5.css": {
-    "file": "_slug_.FkTLJjA5.css",
+  "_slug_.DLTgmdQD.css": {
+    "file": "_slug_.DLTgmdQD.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -177,15 +177,15 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Kzy7hqkV.js",
+    "file": "BNDCGSa9.js",
     "name": "index",
     "src": "pages/projecten/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_DKfU7867.js",
+      "_D7jKqJbf.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_CUprcf4Z.js",
-      "_BKk8nbAZ.js"
+      "_wDzCx9HW.js",
+      "_D_5JB8dp.js"
     ]
   }
 };

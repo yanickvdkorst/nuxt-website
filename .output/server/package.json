@@ -23,6 +23,8 @@
     "@protobufjs/path": "1.1.2",
     "@protobufjs/pool": "1.1.0",
     "@protobufjs/utf8": "1.1.0",
+    "@vercel/analytics": "1.5.0",
+    "@vercel/speed-insights": "1.2.0",
     "@vue/compiler-core": "3.5.15",
     "@vue/compiler-dom": "3.5.15",
     "@vue/compiler-ssr": "3.5.15",

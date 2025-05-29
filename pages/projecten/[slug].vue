@@ -32,7 +32,7 @@ const { data: project } = await useAsyncData('project', async () => {
 <template>
   <div class="bg-gradient-to-br from-indigo-700 via-purple-800 to-pink-700 min-h-screen py-16 px-4 flex items-center justify-center">
     <div v-if="project" class="w-full max-w-3xl bg-white/90 rounded-2xl shadow-2xl p-10 border border-white/40 relative overflow-hidden animate-fade-in-up">
-      <span class="absolute top-6 right-6 bg-indigo-600 text-xs font-bold px-3 py-1 rounded-full shadow text-white uppercase tracking-widest">
+      <span class="hidden md:block absolute top-6 right-6 bg-indigo-600 text-xs font-bold px-3 py-1 rounded-full shadow text-white uppercase tracking-widest">
         Project
       </span>
       <h1 class="text-4xl font-extrabold text-indigo-800  drop-shadow-lg">{{ project.title }}</h1>

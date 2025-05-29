@@ -1,10 +1,12 @@
-import { defineComponent, shallowRef, h, resolveComponent, hasInjectionContext, getCurrentInstance, computed, ref, inject, Suspense, Fragment, useSSRContext, createApp, provide, shallowReactive, withCtx, createTextVNode, createVNode, toRef, onErrorCaptured, onServerPrefetch, unref, resolveDynamicComponent, reactive, effectScope, isReadonly, isRef, isShallow, isReactive, toRaw, defineAsyncComponent, mergeProps, getCurrentScope } from 'vue';
+import { defineComponent, shallowRef, h, resolveComponent, hasInjectionContext, getCurrentInstance, computed, ref, inject, Suspense, Fragment, useSSRContext, createApp, provide, shallowReactive, withCtx, createTextVNode, createVNode, unref, toRef, onErrorCaptured, onServerPrefetch, resolveDynamicComponent, reactive, effectScope, isReadonly, isRef, isShallow, isReactive, toRaw, defineAsyncComponent, mergeProps, getCurrentScope } from 'vue';
 import { p as parseQuery, c as createError$1, h as hasProtocol, i as joinURL, k as getContext, w as withQuery, l as withTrailingSlash, m as withoutTrailingSlash, n as isScriptProtocol, s as sanitizeStatusCode, $ as $fetch, o as createHooks, q as executeAsync, t as toRouteMatcher, r as createRouter$1, v as defu } from '../nitro/nitro.mjs';
 import { b as baseURL } from '../routes/renderer.mjs';
 import { RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
 import { getApps, initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { ssrRenderAttrs, ssrRenderClass, ssrRenderComponent, ssrRenderAttr, ssrRenderStyle, ssrRenderSuspense, ssrRenderVNode } from 'vue/server-renderer';
+import { Analytics } from '@vercel/analytics/nuxt';
+import { SpeedInsights } from '@vercel/speed-insights/nuxt';
 import 'node:http';
 import 'node:https';
 import 'node:events';
@@ -389,22 +391,22 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-BqGOYfOG.mjs')
+    component: () => import('./index-Bs4B3qJj.mjs')
   },
   {
     name: "contact",
     path: "/contact",
-    component: () => import('./contact-Z-TRnzlk.mjs')
+    component: () => import('./contact-CZ1HYiJu.mjs')
   },
   {
     name: "projecten",
     path: "/projecten",
-    component: () => import('./index-DhvyafP4.mjs')
+    component: () => import('./index-ObN04cUl.mjs')
   },
   {
     name: "projecten-slug",
     path: "/projecten/:slug()",
-    component: () => import('./_slug_-BsIdAGZO.mjs')
+    component: () => import('./_slug_-Bx67gfZx.mjs')
   }
 ];
 const ROUTE_KEY_PARENTHESES_RE = /(:\w+)\([^)]+\)/g;
@@ -1241,6 +1243,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
         _: 1
       }, _parent));
       _push(ssrRenderComponent(FullScreenNav, null, null, _parent));
+      _push(ssrRenderComponent(unref(Analytics), null, null, _parent));
+      _push(ssrRenderComponent(unref(SpeedInsights), null, null, _parent));
       _push(`</header>`);
       _push(ssrRenderComponent(_component_NuxtPage, null, null, _parent));
       _push(`<div class="custom-cursor" style="${ssrRenderStyle({ left: cursorX.value + "px", top: cursorY.value + "px" })}"></div><!--]-->`);
@@ -1274,8 +1278,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-Fag7Ghdp.mjs'));
-    const _Error = defineAsyncComponent(() => import('./error-500-BqH_nwGc.mjs'));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-YxykyMWK.mjs'));
+    const _Error = defineAsyncComponent(() => import('./error-500-zrd-ThiQ.mjs'));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
