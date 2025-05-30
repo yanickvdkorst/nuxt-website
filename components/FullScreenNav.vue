@@ -34,7 +34,7 @@
 
     <!-- Fullscreen overlay -->
     <div
-      class="fixed px-16 py-8 inset-0 bg-indigo-900 bg-opacity-95 flex flex-col justify-center text-white text-3xl font-bold transform transition-transform duration-300 ease-in-out"
+      class="fixed px-16 py-8 inset-0 bg-indigo-900 bg-opacity-95 flex flex-col justify-center text-white text-3xl font-bold transform transition-transform duration-500 ease-in-out"
       :class="{ 'translate-x-0': isOpen, 'translate-x-full': !isOpen }"
     >
       <nav class="space-y-6  flex flex-col">
