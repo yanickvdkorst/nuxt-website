@@ -1,0 +1,50 @@
+
+
+html, body{cursor: none;}
+
+
+
+/* Eigen CSS hier als je wilt */
+header {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+a, button:hover {
+    cursor: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  html, body {
+    cursor: auto;
+  }
+  
+  a, button:hover {
+    cursor: pointer !important;
+}
+}
+
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-cursor { display: none; }
+  
+}
+
+.banner-hero {background-image: url("../images/banner_mockup.png");  background-size: cover;background-position: center; width: 100%; z-index: 1; position: relative;
+  &::after   {  content: ""; position: absolute; inset: 0;  background: rgba(0, 0, 0, 0.17); pointer-events: none; border-radius: 1rem; }
+  *{z-index: 10;}
+}

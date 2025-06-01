@@ -22,6 +22,7 @@
     "@tailwindcss/postcss": "^4.1.7",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
+    "sass-embedded": "^1.89.1",
     "tailwindcss": "^4.1.7"
   }
 }

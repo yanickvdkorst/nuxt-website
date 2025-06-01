@@ -1,34 +1,34 @@
 const client_manifest = {
-  "_BtBUETvq.js": {
+  "_C3oqvvlx.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BtBUETvq.js",
-    "name": "asyncData",
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
-    ]
-  },
-  "_CdRkMY8F.js": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "CdRkMY8F.js",
+    "file": "C3oqvvlx.js",
     "name": "components",
     "imports": [
-      "_LUYTlNtb.js",
+      "_CTNJDcAp.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_LUYTlNtb.js": {
+  "_CTNJDcAp.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "LUYTlNtb.js",
+    "file": "CTNJDcAp.js",
     "name": "v3",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_nKrtGIj7.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "nKrtGIj7.js",
+    "name": "asyncData",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -45,13 +45,13 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Co6uNj8h.js",
+    "file": "PjbrXQcG.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_LUYTlNtb.js"
+      "_CTNJDcAp.js"
     ],
     "css": []
   },
@@ -66,13 +66,13 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BQ2eAelc.js",
+    "file": "UOqJwh1u.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_LUYTlNtb.js"
+      "_CTNJDcAp.js"
     ],
     "css": []
   },
@@ -87,7 +87,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DyrkWV7R.js",
+    "file": "BQyYz7iG.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -111,7 +111,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "lHrSbSk8.js",
+    "file": "GX64eu7q.js",
     "name": "contact",
     "src": "pages/contact.vue",
     "isDynamicEntry": true,
@@ -133,15 +133,15 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "6gDmPQPs.js",
+    "file": "CwrARApt.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CdRkMY8F.js",
+      "_C3oqvvlx.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_BtBUETvq.js",
-      "_LUYTlNtb.js"
+      "_nKrtGIj7.js",
+      "_CTNJDcAp.js"
     ],
     "css": []
   },
@@ -156,18 +156,18 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DMvTBuLP.js",
+    "file": "UpHWEWUg.js",
     "name": "_slug_",
     "src": "pages/projecten/[slug].vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_BtBUETvq.js"
+      "_nKrtGIj7.js"
     ],
     "css": []
   },
-  "_slug_.BwLGkWSj.css": {
-    "file": "_slug_.BwLGkWSj.css",
+  "_slug_.2lWMNqBv.css": {
+    "file": "_slug_.2lWMNqBv.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -177,15 +177,15 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Cal4d6x3.js",
+    "file": "B9vabsO5.js",
     "name": "index",
     "src": "pages/projecten/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CdRkMY8F.js",
+      "_C3oqvvlx.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_BtBUETvq.js",
-      "_LUYTlNtb.js"
+      "_nKrtGIj7.js",
+      "_CTNJDcAp.js"
     ]
   }
 };

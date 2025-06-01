@@ -401,12 +401,12 @@ const _routes = [
   {
     name: "projecten",
     path: "/projecten",
-    component: () => import('./index-ObN04cUl.mjs')
+    component: () => import('./index-ZwkCaFIC.mjs')
   },
   {
     name: "projecten-slug",
     path: "/projecten/:slug()",
-    component: () => import('./_slug_-cFPxiJ_9.mjs')
+    component: () => import('./_slug_-tWVZkniy.mjs')
   }
 ];
 const ROUTE_KEY_PARENTHESES_RE = /(:\w+)\([^)]+\)/g;
