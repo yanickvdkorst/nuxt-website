@@ -17,7 +17,7 @@
         <h1 class="text-5xl md:text-6xl font-extrabold drop-shadow-xl mb-4 animate-fade-in-up">
           {{ hero.title }}
         </h1>
-        <p class="text-xl md:text-2xl max-w-2xl mx-auto animate-fade-in-up delay-200">
+        <p class="text-lg md:text-lg max-w-2xl mx-auto animate-fade-in-up delay-200">
           {{ hero.description }}
         </p>
        <div class="mt-8 flex flex-col md:flex-row gap-4 justify-center animate-fade-in-up delay-300">
