@@ -22,18 +22,20 @@
 
 <script setup lang="ts">
 import { useRoute } from "vue-router";
-import { collection, getDocs, query, where } from "firebase/firestore";
+import { collection, getDocs, query, where, Firestore } from "firebase/firestore";
 import { ref, watch } from "vue";
 import TekstAfbeelding from "~/components/blocks/TekstAfbeelding.vue";
 // eventueel andere blok-componenten importeren
 
 const { $db } = useNuxtApp();
+const db = $db as Firestore;
+
 const route = useRoute();
 
 const post = ref<any>(null);
 
 async function fetchPost(slug: string) {
-  const q = query(collection($db, "blog"), where("slug", "==", slug));
+  const q = query(collection(db, "blog"), where("slug", "==", slug));
   const querySnapshot = await getDocs(q);
   const docs = querySnapshot.docs.map(doc => doc.data());
   post.value = docs.length > 0 ? docs[0] : null;

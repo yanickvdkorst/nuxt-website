@@ -69,12 +69,14 @@
 
 <script setup lang="ts">
 import { useRoute } from "vue-router";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs,Firestore } from "firebase/firestore";
 
 const { $db } = useNuxtApp();
+const db = $db as Firestore; 
+
 const route = useRoute();
 
-function serialize(obj: any) {
+function serialize(obj: any): any {
   if (obj === null || obj === undefined) return obj;
   if (typeof obj !== "object") return obj;
   if (obj.toDate) return obj.toDate().toISOString();
@@ -86,8 +88,9 @@ function serialize(obj: any) {
   return out;
 }
 
+
 const { data: project } = await useAsyncData('project', async () => {
-  const querySnapshot = await getDocs(collection($db, "projecten"));
+  const querySnapshot = await getDocs(collection(db, "projecten"));
   const allProjects = querySnapshot.docs.map(doc => ({
     id: doc.id,
     ...serialize(doc.data())

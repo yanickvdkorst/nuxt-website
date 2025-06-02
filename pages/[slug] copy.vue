@@ -27,16 +27,18 @@
 
 <script setup lang="ts">
 import { useRoute, useRouter } from "vue-router";
-import { collection, getDocs, query, where } from "firebase/firestore";
+import { collection, getDocs, query, where, Firestore } from "firebase/firestore";
 import { ref, watch } from "vue";
 
 const { $db } = useNuxtApp();
+const db = $db as Firestore;
+
 const route = useRoute();
 
 const hero = ref<any>(null);
 
 async function fetchHero(slug: string) {
-  const q = query(collection($db, "pages"), where("slug", "==", slug));
+  const q = query(collection(db, "pages"), where("slug", "==", slug));
   const querySnapshot = await getDocs(q);
   const docs = querySnapshot.docs.map(doc => doc.data());
   hero.value = docs.length > 0 && docs[0].hero_section ? docs[0].hero_section : null;

@@ -20,15 +20,16 @@
 </template>
 
 <script setup lang="ts">
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, Firestore } from "firebase/firestore";
 import { ref } from "vue";
 
 const { $db } = useNuxtApp();
+const db = $db as Firestore;
 
 const posts = ref<any[]>([]);
 
 async function fetchPosts() {
-  const querySnapshot = await getDocs(collection($db, "blog"));
+  const querySnapshot = await getDocs(collection(db, "blog"));
   posts.value = querySnapshot.docs.map(doc => ({
     id: doc.id,
     ...doc.data()
