@@ -5,7 +5,7 @@
       <meta name="description" content="Overzicht van alle projecten" />
     </Head>
 
-    <h1 class="text-4xl font-extrabold text-center mb-32 mt-16 text-white drop-shadow-lg tracking-tight">
+    <h1 class="text-4xl font-extrabold text-center mb-16 md:mb-32 mt-16 text-white drop-shadow-lg tracking-tight">
       Mijn projecten
     </h1>
     <div class="w-full px-4 flex justify-center">

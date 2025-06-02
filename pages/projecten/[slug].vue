@@ -54,7 +54,7 @@
         <div class="flex flex-col max-w-7xl mx-auto mt-8 p-8 bg-white/90 rounded-2xl shadow-2xl border border-white/40">
           <p class="text-gray-700 text-lg">{{ project.description || 'Geen overzicht beschikbaar' }}</p>
           <div class="text-gray-700 text-sm mt-6">
-            <span>Timeline: </span>
+            <span>Date: </span>
             <span>{{ new Date(project.publish_date).toLocaleDateString('nl-NL', { year: 'numeric' }) }}</span>
         </div>
         </div>

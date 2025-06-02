@@ -40,12 +40,14 @@
 </template>
 
 <script setup lang="ts">
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 
 const { $db } = useNuxtApp();
 
 const { data: hero } = await useAsyncData('hero', async () => {
-  const querySnapshot = await getDocs(collection($db, "pages"));
+  // Query voor pagina met slug 'homepage'
+  const q = query(collection($db, "pages"), where("slug", "==", "homepage"));
+  const querySnapshot = await getDocs(q);
   const docs = querySnapshot.docs.map(doc => doc.data());
   if (docs.length > 0 && docs[0].hero_section) {
     return docs[0].hero_section;
