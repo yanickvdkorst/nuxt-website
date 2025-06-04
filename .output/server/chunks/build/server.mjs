@@ -421,7 +421,7 @@ const _routes = [
   {
     name: "projecten-slug",
     path: "/projecten/:slug()",
-    component: () => import('./_slug_-BruROl1A.mjs')
+    component: () => import('./_slug_-CLX0aFtG.mjs')
   }
 ];
 const ROUTE_KEY_PARENTHESES_RE = /(:\w+)\([^)]+\)/g;
