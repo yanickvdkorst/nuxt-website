@@ -69,14 +69,15 @@
       <div v-if="project.footer == true" class="mt-20 flex flex-col items-center text-center text-white">
         <h3 class="text-2xl font-bold mb-2">Interested in this project?</h3>
         <p class="mb-6 text-gray-100">Explore the source code on GitHub</p>
-        <a
-          :href="project.github_link || '#'"
-          target="_blank"
-          rel="noopener"
-          class="inline-block px-8 py-3 rounded-full bg-indigo-600 text-white font-semibold shadow hover:bg-pink-600 transition"
-        >
-          Open GitHub
-        </a>
+
+
+           <ButtonBlue
+               :to="project.github_link || '#'"
+                target="_blank"
+                 rel="noopener"
+              >
+                  Open GitHub
+            </ButtonBlue>
       </div>
 
     </div>

@@ -1,0 +1,4 @@
+const blog_vue_vue_type_style_index_0_scoped_c23ad3ed_lang = ".blog-layout[data-v-c23ad3ed]{display:flex;flex-direction:column;min-height:100vh}.header[data-v-c23ad3ed]{background:#333;color:#fff;padding:1rem}.main-content[data-v-c23ad3ed]{display:flex;flex:1;padding:1rem}.sidebar[data-v-c23ad3ed]{border-right:1px solid #ddd;padding-right:1rem;width:250px}.content[data-v-c23ad3ed]{flex:1;padding-left:1rem}.footer[data-v-c23ad3ed]{background:#333;color:#fff;padding:1rem;text-align:center}";
+
+export { blog_vue_vue_type_style_index_0_scoped_c23ad3ed_lang as b };
+//# sourceMappingURL=blog-styles-1.mjs-CoKivBu_.mjs.map

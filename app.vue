@@ -11,7 +11,11 @@
      <Analytics/>
      <SpeedInsights/>
   </header>
-  <NuxtPage />
+ 
+      <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
+
       <div
       class="custom-cursor"
       :style="{ left: cursorX + 'px', top: cursorY + 'px' }"

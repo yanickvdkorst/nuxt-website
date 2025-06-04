@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     '~/assets/css/main.css', // <-- voeg hier je standaard CSS toe
     '~/assets/css/main.scss',
   ],
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
   runtimeConfig: {
     public: {
       firebaseApiKey: process.env.NUXT_PUBLIC_FIREBASE_API_KEY,
@@ -17,5 +17,8 @@ export default defineNuxtConfig({
       firebaseMessagingSenderId: process.env.NUXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
       firebaseAppId: process.env.NUXT_PUBLIC_FIREBASE_APP_ID,
     }
+  },
+   image: {
+    provider: 'ipx'
   }
 })

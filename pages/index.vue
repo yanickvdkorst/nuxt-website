@@ -22,17 +22,12 @@
         </p>
        <div class="mt-8 flex flex-col md:flex-row gap-4 justify-center animate-fade-in-up delay-300">
 
-          <NuxtLink
-            to="/projecten"
-            class="px-6 py-3 rounded-full border border-white bg-white text-indigo-600 font-semibold shadow hover:bg-transparent hover:text-white hover:border border-white transition"          >
+          <ButtonWhite to="/projecten">
             Bekijk projecten
-          </NuxtLink>
-          <NuxtLink
-            to="/contact"
-            class="px-6 py-3 rounded-full  border border-white text-white font-semibold hover:bg-white hover:text-indigo-600 transition"
-          >
-            Neem contact op
-          </NuxtLink>
+          </ButtonWhite>
+          <ButtonGhost to= "/contact">
+             Neem contact op
+          </ButtonGhost>
         </div>
       </div>
     </section>
@@ -41,6 +36,7 @@
 
 <script setup lang="ts">
 import { collection, getDocs, query, where, Firestore } from "firebase/firestore";
+
 
 const { $db } = useNuxtApp();
 const db = $db as Firestore;

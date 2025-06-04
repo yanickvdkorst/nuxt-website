@@ -20,6 +20,7 @@
       </div>
 
       <img src="../assets/images/Yanick_small.jpg" class="w-128 h-128 object-cover rounded-lg shadow" alt="" />
+
     </div>
   </div>
 </template>

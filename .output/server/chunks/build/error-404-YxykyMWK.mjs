@@ -11,17 +11,18 @@ import 'node:fs';
 import 'node:path';
 import 'node:crypto';
 import 'node:url';
+import 'ipx';
+import 'vue-router';
+import 'firebase/app';
+import 'firebase/firestore';
+import '@vercel/analytics/nuxt';
+import '@vercel/speed-insights/nuxt';
 import '../routes/renderer.mjs';
 import 'vue-bundle-renderer/runtime';
 import 'unhead/server';
 import 'devalue';
 import 'unhead/utils';
 import 'unhead/plugins';
-import 'vue-router';
-import 'firebase/app';
-import 'firebase/firestore';
-import '@vercel/analytics/nuxt';
-import '@vercel/speed-insights/nuxt';
 
 const _sfc_main = {
   __name: "error-404",

@@ -44,9 +44,11 @@
               </span>
             </div>
             <div class="flex gap-2 items-center ">
-              <span class="inline-block w-fit px-6 py-2 bg-indigo-600 text-white rounded-full font-semibold shadow group-hover:bg-pink-600 transition">
-                Bekijk project &rarr;
-              </span>
+              <ButtonBlue
+               :to="`/projecten/${project.slug || project.id}`"
+              >
+                 Bekijk project &rarr;
+              </ButtonBlue>
             </div>
           </div>
           <!-- Afbeelding rechts -->

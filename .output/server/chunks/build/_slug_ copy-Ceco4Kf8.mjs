@@ -11,14 +11,9 @@ import 'node:fs';
 import 'node:path';
 import 'node:crypto';
 import 'node:url';
-import '../routes/renderer.mjs';
-import 'vue-bundle-renderer/runtime';
-import 'vue/server-renderer';
-import 'unhead/server';
-import 'devalue';
-import 'unhead/utils';
-import 'unhead/plugins';
+import 'ipx';
 import 'firebase/app';
+import 'vue/server-renderer';
 import '@vercel/analytics/nuxt';
 import '@vercel/speed-insights/nuxt';
 

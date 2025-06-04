@@ -38,4 +38,8 @@ async function fetchPosts() {
 
 // Initial fetch
 await fetchPosts();
+
+definePageMeta({
+  layout: 'blog'
+});
 </script>
