@@ -96,6 +96,8 @@ import TekstAfbeelding from "~/components/blocks/TekstAfbeelding.vue";
 import ProjectOverview from "~/components/blocks/ProjectOverview.vue";
 import ImageBlock from "~/components/blocks/ImageBlock.vue";
 import imagesMultiple from "~/components/blocks/imagesMultiple.vue";
+import ModelBlock from "~/components/blocks/ModelBlock.vue";
+import VideoBlock from "~/components/blocks/VideoBlock.vue";
 // importeer hier je andere blokken als je die hebt, bijv:
 // import TextBlock from "~/components/blocks/TextBlock.vue";
 
@@ -138,6 +140,10 @@ function resolveComponent(type: string) {
       return ImageBlock;
     case "images":
       return imagesMultiple;
+    case "model":
+      return ModelBlock;
+    case "video":
+      return VideoBlock;
     // Voeg hier meer bloktypen toe, bijvoorbeeld:
     // case "text":
     //   return TextBlock;

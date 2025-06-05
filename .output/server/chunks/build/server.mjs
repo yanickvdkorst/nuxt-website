@@ -421,7 +421,7 @@ const _routes = [
   {
     name: "projecten-slug",
     path: "/projecten/:slug()",
-    component: () => import('./_slug_-B9tA2KWk.mjs')
+    component: () => import('./_slug_-CiWNYBFm.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {
