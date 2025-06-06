@@ -5,7 +5,7 @@
       :key="idx"
       class="image-container w-full mx-auto aspect-[2/3] rounded-lg overflow-hidden shadow-lg"
     >
-              <NuxtImg :src="img" alt="images" class="w-full h-full object-cover"/>
+              <img :src="img" alt="images" class="w-full h-full object-cover">
 
     </div>
   </div>

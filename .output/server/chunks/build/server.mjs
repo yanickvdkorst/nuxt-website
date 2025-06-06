@@ -390,7 +390,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-BXVuR73K.mjs')
+    component: () => import('./index-BL-s2Y10.mjs')
   },
   {
     name: "slug",
@@ -411,17 +411,17 @@ const _routes = [
   {
     name: "blog-slug",
     path: "/blog/:slug()",
-    component: () => import('./_slug_-C3s1Ehf7.mjs')
+    component: () => import('./_slug_-C9vFcpFz.mjs')
   },
   {
     name: "projecten",
     path: "/projecten",
-    component: () => import('./index-clQaESz_.mjs')
+    component: () => import('./index-DzXMsMFD.mjs')
   },
   {
     name: "projecten-slug",
     path: "/projecten/:slug()",
-    component: () => import('./_slug_-CiWNYBFm.mjs')
+    component: () => import('./_slug_-BBb0LDb0.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -1068,7 +1068,7 @@ function applyTrailingSlashBehavior(to, trailingSlash) {
   return normalizeFn(to, true);
 }
 const layouts = {
-  blog: defineAsyncComponent(() => import('./blog-DK4jRvqM.mjs').then((m) => m.default || m))
+  blog: defineAsyncComponent(() => import('./blog-CrUo_RqI.mjs').then((m) => m.default || m))
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
@@ -1525,5 +1525,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { _export_sfc as _, __nuxt_component_0 as a, useRuntimeConfig as b, asyncDataDefaults as c, createError as d, entry$1 as default, __nuxt_component_1 as e, tryUseNuxtApp as t, useNuxtApp as u };
+export { _export_sfc as _, __nuxt_component_0 as a, asyncDataDefaults as b, createError as c, __nuxt_component_1 as d, entry$1 as default, tryUseNuxtApp as t, useNuxtApp as u };
 //# sourceMappingURL=server.mjs.map
