@@ -29,7 +29,7 @@ import '@vercel/speed-insights/nuxt';
 import 'perfect-debounce';
 
 const _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: "index",
+  __name: "index copy",
   __ssrInlineRender: true,
   async setup(__props) {
     let __temp, __restore;
@@ -117,9 +117,9 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/projecten/index.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/projecten/index copy.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=index-DzXMsMFD.mjs.map
+//# sourceMappingURL=index copy-CqN-0I5D.mjs.map

@@ -416,12 +416,17 @@ const _routes = [
   {
     name: "projecten",
     path: "/projecten",
-    component: () => import('./index-DzXMsMFD.mjs')
+    component: () => import('./index-CAQojVWD.mjs')
   },
   {
     name: "projecten-slug",
     path: "/projecten/:slug()",
     component: () => import('./_slug_-BBb0LDb0.mjs')
+  },
+  {
+    name: "projecten-index copy",
+    path: "/projecten/index%20copy",
+    component: () => import('./index copy-CqN-0I5D.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {
