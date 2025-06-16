@@ -390,12 +390,12 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-BL-s2Y10.mjs')
+    component: () => import('./index-BpNeXyq9.mjs')
   },
   {
     name: "slug",
     path: "/:slug()",
-    component: () => import('./_slug_-B3hWZVZI.mjs')
+    component: () => import('./_slug_-KQeXNGi5.mjs')
   },
   {
     name: "blog",
@@ -416,12 +416,12 @@ const _routes = [
   {
     name: "projecten",
     path: "/projecten",
-    component: () => import('./index-CAQojVWD.mjs')
+    component: () => import('./index-DazQlGWE.mjs')
   },
   {
     name: "projecten-slug",
     path: "/projecten/:slug()",
-    component: () => import('./_slug_-BBb0LDb0.mjs')
+    component: () => import('./_slug_-DhabFahB.mjs')
   },
   {
     name: "projecten-index copy",
@@ -1407,10 +1407,10 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
       _push(ssrRenderComponent(_component_NuxtLayout, null, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_component_NuxtPage, null, null, _parent2, _scopeId));
+            _push2(ssrRenderComponent(_component_NuxtPage, { class: "bg-gradient-to-br from-indigo-700 via-purple-800 to-pink-700" }, null, _parent2, _scopeId));
           } else {
             return [
-              createVNode(_component_NuxtPage)
+              createVNode(_component_NuxtPage, { class: "bg-gradient-to-br from-indigo-700 via-purple-800 to-pink-700" })
             ];
           }
         }),

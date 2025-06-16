@@ -13,7 +13,7 @@
   </header>
  
       <NuxtLayout>
-    <NuxtPage />
+    <NuxtPage class="bg-gradient-to-br from-indigo-700 via-purple-800 to-pink-700"/>
   </NuxtLayout>
 
       <div

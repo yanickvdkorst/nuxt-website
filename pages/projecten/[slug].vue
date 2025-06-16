@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-br from-indigo-700 via-purple-800 to-pink-700 min-h-screen pt-24 pb-16 px-4 flex ">
+  <div class=" min-h-screen pt-24 pb-16 px-4 flex ">
     <div v-if="project" class="project-detail">
       <div class="project-detail-banner w-full bg-white/90 rounded-2xl shadow-2xl p-10 border border-white/40 animate-fade-in-up flex flex-col md:flex-row gap-10" >
         <!-- Tekst links -->

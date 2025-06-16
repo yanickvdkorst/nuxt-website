@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex items-center flex-col md:justify-center bg-gradient-to-br from-indigo-700 via-purple-800 to-pink-700 py-16 px-4">
+  <div class="min-h-screen flex items-center flex-col md:justify-center py-16 px-4">
     <div class="text-center text-white animate-fade-in-up delay-800 flex items-center flex-col-reverse lg:flex-row gap-x-32">
       <div class="left mt-5 lg:mt-0">
         <h1 class="text-5xl font-bold">{{ hero?.title || '...' }}</h1>

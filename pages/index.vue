@@ -7,7 +7,7 @@
 
     <section
       v-if="hero"
-      class="relative flex flex-col items-center justify-center min-h-screen text-center text-white bg-gradient-to-r from-indigo-600 via-purple-700 to-pink-600 overflow-hidden"
+      class="relative flex flex-col items-center justify-center min-h-screen text-center text-white overflow-hidden"
     >
       <!-- Overlay -->
       <div class="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>

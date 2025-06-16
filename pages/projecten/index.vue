@@ -1,5 +1,5 @@
 <template>
-<section class="relative h-screen overflow-hidden bg-gradient-to-br from-indigo-700 via-purple-800 to-pink-700">
+<section class="relative h-screen overflow-hidden">
 
   <!-- Achtergrond afbeeldingen container -->
   <div class="image">
@@ -37,7 +37,7 @@
         class="absolute inset-0 z-30"
       />
       <div class="max-w-4xl">
-        <h2 class="text-6xl font-extrabold mb-4 drop-shadow-lg">
+        <h2 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
           {{ project.title || project.id }}
         </h2>
         <div class="text-xl drop-shadow-lg">
