@@ -12,8 +12,12 @@
     <NuxtPage class="bg-gradient-to-br from-indigo-700 via-purple-800 to-pink-700" />
   </NuxtLayout>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR8SQ7NV"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+ <client-only>
+      <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR8SQ7NV"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+    </client-only>
 <!-- End Google Tag Manager (noscript) -->
   <div
     class="custom-cursor"

@@ -5,7 +5,7 @@ import { ssrRenderAttrs, ssrRenderComponent, ssrInterpolate, ssrRenderList, ssrR
 import { useRoute } from 'vue-router';
 import { getDocs, collection } from 'firebase/firestore';
 import { _ as _sfc_main$7 } from './TekstAfbeelding-Cpz9rUyG.mjs';
-import { u as useAsyncData } from './asyncData-Di0FUC4_.mjs';
+import { u as useAsyncData } from './asyncData-mpxESJNT.mjs';
 import '../nitro/nitro.mjs';
 import 'node:http';
 import 'node:https';
@@ -257,4 +257,4 @@ _sfc_main.setup = (props, ctx) => {
 const _slug_ = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-dac364b7"]]);
 
 export { _slug_ as default };
-//# sourceMappingURL=_slug_-oTdvcIMr.mjs.map
+//# sourceMappingURL=_slug_-DUc6tOy9.mjs.map

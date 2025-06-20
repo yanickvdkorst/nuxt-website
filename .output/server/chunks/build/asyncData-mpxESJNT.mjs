@@ -1,44 +1,7 @@
-import { computed, toValue, getCurrentInstance, onServerPrefetch, ref, shallowRef, toRef, nextTick, unref, defineComponent, createElementBlock, provide, cloneVNode } from 'vue';
+import { computed, toValue, getCurrentInstance, onServerPrefetch, ref, shallowRef, toRef, nextTick, unref } from 'vue';
 import { debounce } from 'perfect-debounce';
 import { b as useNuxtApp, c as asyncDataDefaults, d as createError } from './server.mjs';
 
-defineComponent({
-  name: "ServerPlaceholder",
-  render() {
-    return createElementBlock("div");
-  }
-});
-const clientOnlySymbol = Symbol.for("nuxt:client-only");
-defineComponent({
-  name: "ClientOnly",
-  inheritAttrs: false,
-  props: ["fallback", "placeholder", "placeholderTag", "fallbackTag"],
-  setup(props, { slots, attrs }) {
-    const mounted = shallowRef(false);
-    const vm = getCurrentInstance();
-    if (vm) {
-      vm._nuxtClientOnly = true;
-    }
-    provide(clientOnlySymbol, true);
-    return () => {
-      var _a;
-      if (mounted.value) {
-        const vnodes = (_a = slots.default) == null ? void 0 : _a.call(slots);
-        if (vnodes && vnodes.length === 1) {
-          return [cloneVNode(vnodes[0], attrs)];
-        }
-        return vnodes;
-      }
-      const slot = slots.fallback || slots.placeholder;
-      if (slot) {
-        return slot();
-      }
-      const fallbackStr = props.fallback || props.placeholder || "";
-      const fallbackTag = props.fallbackTag || props.placeholderTag || "span";
-      return createElementBlock(fallbackTag, attrs, fallbackStr);
-    };
-  }
-});
 const isDefer = (dedupe) => dedupe === "defer" || dedupe === false;
 function useAsyncData(...args) {
   var _a2, _b, _c, _d, _e, _f, _g;
@@ -277,4 +240,4 @@ const getDefaultCachedData = (key, nuxtApp, ctx) => {
 };
 
 export { useAsyncData as u };
-//# sourceMappingURL=asyncData-Di0FUC4_.mjs.map
+//# sourceMappingURL=asyncData-mpxESJNT.mjs.map

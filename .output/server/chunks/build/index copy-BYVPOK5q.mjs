@@ -4,7 +4,7 @@ import { _ as _sfc_main$1 } from './ButtonBlue-BT5tqFZN.mjs';
 import { defineComponent, withAsyncContext, mergeProps, withCtx, createVNode, unref, createTextVNode, useSSRContext } from 'vue';
 import { ssrRenderAttrs, ssrRenderComponent, ssrRenderList, ssrInterpolate, ssrRenderAttr } from 'vue/server-renderer';
 import { getDocs, collection } from 'firebase/firestore';
-import { u as useAsyncData } from './asyncData-Di0FUC4_.mjs';
+import { u as useAsyncData } from './asyncData-mpxESJNT.mjs';
 import '../nitro/nitro.mjs';
 import 'node:http';
 import 'node:https';
@@ -119,4 +119,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=index copy-jzgSaF-o.mjs.map
+//# sourceMappingURL=index copy-BYVPOK5q.mjs.map

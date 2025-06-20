@@ -1,4 +1,4 @@
-import { defineComponent, shallowRef, h, resolveComponent, ref, inject, Suspense, computed, hasInjectionContext, getCurrentInstance, provide, shallowReactive, Fragment, defineAsyncComponent, unref, useSSRContext, createApp, withCtx, createTextVNode, createVNode, toRef, onErrorCaptured, onServerPrefetch, resolveDynamicComponent, reactive, effectScope, isReadonly, isRef, isShallow, isReactive, toRaw, nextTick, mergeProps, getCurrentScope } from 'vue';
+import { defineComponent, shallowRef, h, resolveComponent, ref, inject, Suspense, computed, hasInjectionContext, getCurrentInstance, provide, shallowReactive, Fragment, defineAsyncComponent, unref, createElementBlock, cloneVNode, useSSRContext, createApp, withCtx, createTextVNode, createVNode, toRef, onErrorCaptured, onServerPrefetch, resolveDynamicComponent, reactive, effectScope, isReadonly, isRef, isShallow, isReactive, toRaw, nextTick, mergeProps, getCurrentScope } from 'vue';
 import { i as parseQuery, e as createError$1, j as hasProtocol, k as joinURL, w as withQuery, l as withTrailingSlash, m as withoutTrailingSlash, n as isScriptProtocol, o as getContext, s as sanitizeStatusCode, $ as $fetch, q as baseURL, r as createHooks, t as executeAsync, v as toRouteMatcher, x as createRouter$1, y as defu } from '../nitro/nitro.mjs';
 import { RouterView, useRoute as useRoute$1, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
 import { getApps, initializeApp } from 'firebase/app';
@@ -394,7 +394,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-DiopOLUA.mjs')
+    component: () => import('./index-q1RaDv2C.mjs')
   },
   {
     name: "slug",
@@ -420,17 +420,17 @@ const _routes = [
   {
     name: "projecten",
     path: "/projecten",
-    component: () => import('./index-q-iGQWqb.mjs')
+    component: () => import('./index-CsZ_rPyZ.mjs')
   },
   {
     name: "projecten-slug",
     path: "/projecten/:slug()",
-    component: () => import('./_slug_-oTdvcIMr.mjs')
+    component: () => import('./_slug_-DUc6tOy9.mjs')
   },
   {
     name: "projecten-index copy",
     path: "/projecten/index%20copy",
-    component: () => import('./index copy-jzgSaF-o.mjs')
+    component: () => import('./index copy-BYVPOK5q.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -552,6 +552,9 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to, from) => {
   });
   return error;
 });
+const page_45view_45global = /* @__PURE__ */ defineNuxtRouteMiddleware((to) => {
+  return;
+});
 const manifest_45route_45rule = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
   {
     return;
@@ -559,6 +562,7 @@ const manifest_45route_45rule = /* @__PURE__ */ defineNuxtRouteMiddleware(async 
 });
 const globalMiddleware = [
   validate,
+  page_45view_45global,
   manifest_45route_45rule
 ];
 const namedMiddleware = {};
@@ -1305,6 +1309,43 @@ function normalizeSlot(slot, data) {
   const slotContent = slot(data);
   return slotContent.length === 1 ? h(slotContent[0]) : h(Fragment, void 0, slotContent);
 }
+defineComponent({
+  name: "ServerPlaceholder",
+  render() {
+    return createElementBlock("div");
+  }
+});
+const clientOnlySymbol = Symbol.for("nuxt:client-only");
+const __nuxt_component_3 = defineComponent({
+  name: "ClientOnly",
+  inheritAttrs: false,
+  props: ["fallback", "placeholder", "placeholderTag", "fallbackTag"],
+  setup(props, { slots, attrs }) {
+    const mounted = shallowRef(false);
+    const vm = getCurrentInstance();
+    if (vm) {
+      vm._nuxtClientOnly = true;
+    }
+    provide(clientOnlySymbol, true);
+    return () => {
+      var _a;
+      if (mounted.value) {
+        const vnodes = (_a = slots.default) == null ? void 0 : _a.call(slots);
+        if (vnodes && vnodes.length === 1) {
+          return [cloneVNode(vnodes[0], attrs)];
+        }
+        return vnodes;
+      }
+      const slot = slots.fallback || slots.placeholder;
+      if (slot) {
+        return slot();
+      }
+      const fallbackStr = props.fallback || props.placeholder || "";
+      const fallbackTag = props.fallbackTag || props.placeholderTag || "span";
+      return createElementBlock(fallbackTag, attrs, fallbackStr);
+    };
+  }
+});
 const _imports_0 = "data:image/svg+xml,%3csvg%20width='60'%20height='51'%20viewBox='0%200%2060%2051'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M51.0403%2024.9867L46.667%205.33333H48.667V0H6.00033V10.6667H0.666992V16H6.00033V25.44C4.32648%2026.9371%202.98653%2028.7698%202.06765%2030.819C1.14877%2032.8681%200.671539%2035.0876%200.666992%2037.3333V42.6667H6.00033C6.00033%2044.7884%206.84318%2046.8232%208.34347%2048.3235C9.84376%2049.8238%2011.8786%2050.6667%2014.0003%2050.6667C16.1221%2050.6667%2018.1569%2049.8238%2019.6572%2048.3235C21.1575%2046.8232%2022.0003%2044.7884%2022.0003%2042.6667H38.0003C38.0003%2044.7884%2038.8432%2046.8232%2040.3435%2048.3235C41.8438%2049.8238%2043.8786%2050.6667%2046.0003%2050.6667C48.1221%2050.6667%2050.1569%2049.8238%2051.6572%2048.3235C53.1575%2046.8232%2054.0003%2044.7884%2054.0003%2042.6667H59.3337V37.3333C59.3342%2034.6843%2058.5456%2032.0952%2057.0685%2029.8962C55.5914%2027.6972%2053.4928%2025.988%2051.0403%2024.9867ZM14.0003%2046.6667C13.2092%2046.6667%2012.4358%2046.4321%2011.778%2045.9925C11.1202%2045.553%2010.6076%2044.9283%2010.3048%2044.1974C10.0021%2043.4665%209.92284%2042.6622%2010.0772%2041.8863C10.2315%2041.1104%2010.6125%2040.3977%2011.1719%2039.8382C11.7313%2039.2788%2012.444%2038.8979%2013.22%2038.7435C13.9959%2038.5892%2014.8002%2038.6684%2015.5311%2038.9712C16.262%2039.2739%2016.8867%2039.7866%2017.3262%2040.4444C17.7657%2041.1022%2018.0003%2041.8755%2018.0003%2042.6667C18.0003%2043.7275%2017.5789%2044.7449%2016.8288%2045.4951C16.0786%2046.2452%2015.0612%2046.6667%2014.0003%2046.6667ZM39.4137%2024L36.347%2019.4133L40.1337%2016.88L37.2003%2012.4533L25.2003%2020.4533L28.1337%2024.88L31.947%2022.3467L35.0137%2026.9867L32.667%2029.3333H25.2003L11.3337%2010.6667V5.33333H41.2003L45.3337%2024M46.0003%2046.6667C45.2092%2046.6667%2044.4358%2046.4321%2043.778%2045.9925C43.1203%2045.553%2042.6076%2044.9283%2042.3048%2044.1974C42.0021%2043.4665%2041.9228%2042.6622%2042.0772%2041.8863C42.2315%2041.1104%2042.6125%2040.3977%2043.1719%2039.8382C43.7313%2039.2788%2044.444%2038.8979%2045.22%2038.7435C45.9959%2038.5892%2046.8002%2038.6684%2047.5311%2038.9712C48.262%2039.2739%2048.8867%2039.7866%2049.3262%2040.4444C49.7657%2041.1022%2050.0003%2041.8755%2050.0003%2042.6667C50.0003%2043.7275%2049.5789%2044.7449%2048.8288%2045.4951C48.0786%2046.2452%2047.0612%2046.6667%2046.0003%2046.6667Z'%20fill='white'/%3e%3c/svg%3e";
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "FullScreenNav",
@@ -1404,6 +1445,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
       const _component_NuxtLink = __nuxt_component_0;
       const _component_NuxtLayout = __nuxt_component_1$1;
       const _component_NuxtPage = __nuxt_component_1;
+      const _component_client_only = __nuxt_component_3;
       _push(`<!--[--><header class="">`);
       _push(ssrRenderComponent(_component_NuxtLink, {
         to: "/",
@@ -1438,7 +1480,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
         }),
         _: 1
       }, _parent));
-      _push(`<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR8SQ7NV" height="0" width="0" style="${ssrRenderStyle({ "display": "none", "visibility": "hidden" })}"></iframe></noscript><div class="custom-cursor" style="${ssrRenderStyle({ left: cursorX.value + "px", top: cursorY.value + "px" })}"></div><!--]-->`);
+      _push(ssrRenderComponent(_component_client_only, null, {}, _parent));
+      _push(`<div class="custom-cursor" style="${ssrRenderStyle({ left: cursorX.value + "px", top: cursorY.value + "px" })}"></div><!--]-->`);
     };
   }
 });

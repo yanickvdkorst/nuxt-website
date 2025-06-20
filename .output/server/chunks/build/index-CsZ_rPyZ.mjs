@@ -4,7 +4,7 @@ import { ssrRenderAttrs, ssrRenderList, ssrRenderAttr, ssrRenderClass, ssrRender
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination, Mousewheel } from 'swiper/modules';
 import { getDocs, collection } from 'firebase/firestore';
-import { u as useAsyncData } from './asyncData-Di0FUC4_.mjs';
+import { u as useAsyncData } from './asyncData-mpxESJNT.mjs';
 import '../nitro/nitro.mjs';
 import 'node:http';
 import 'node:https';
@@ -179,4 +179,4 @@ _sfc_main.setup = (props, ctx) => {
 const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-58a271dd"]]);
 
 export { index as default };
-//# sourceMappingURL=index-q-iGQWqb.mjs.map
+//# sourceMappingURL=index-CsZ_rPyZ.mjs.map
