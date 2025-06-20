@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '~/assets/css/main.scss',
   ],
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
+
   runtimeConfig: {
     public: {
       firebaseApiKey: process.env.NUXT_PUBLIC_FIREBASE_API_KEY,

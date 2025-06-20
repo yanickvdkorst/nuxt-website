@@ -1,1 +1,0 @@
-import{L as a,M as s,N as r,I as o,O as i}from"./CBmgZn_4.js";function u(n){var t;const e=n||s();return((t=e==null?void 0:e.ssrContext)==null?void 0:t.head)||(e==null?void 0:e.runWithContext(()=>{if(r())return o(i)}))}function d(n,e={}){const t=u(e.nuxt);if(t)return a(n,{head:t,...e})}export{d as u};
